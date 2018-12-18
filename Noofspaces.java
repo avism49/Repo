@@ -2,16 +2,15 @@ package assignmts;
 
 import java.util.Scanner;
 
-public class Noofspaces {
+public class Noofspaces 
+{
+	public static void main(String[] args){count();}
 	
-	public static void main(String[] args)
-	{
+	public static void count()
+	 {
 		Scanner scn = new Scanner(System.in);
-
-		System.out.print("Enter User Text: ");
-
-		String text = scn.nextLine();
-		 
+        System.out.print("Enter User Text: ");
+    	String text = scn.nextLine();
 		String data[];int k=0;
 	        data=text.split("");
 	        for(int i=0;i<data.length;i++)
@@ -21,4 +20,6 @@ public class Noofspaces {
             }
 	        System.out.println(k);
 	  }
-	                    }
+}
+	 
+	                    
